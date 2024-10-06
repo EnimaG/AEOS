@@ -1,21 +1,4 @@
-%___________________________________________________________________%
-%  Grey Wold Optimizer (GWO) source codes version 1.0               %
-%                                                                   %
-%  Developed in MATLAB R2011b(7.13)                                 %
-%                                                                   %
-%  Author and programmer: Seyedali Mirjalili                        %
-%                                                                   %
-%         e-Mail: ali.mirjalili@gmail.com                           %
-%                 seyedali.mirjalili@griffithuni.edu.au             %
-%                                                                   %
-%       Homepage: http://www.alimirjalili.com                       %
-%                                                                   %
-%   Main paper: S. Mirjalili, S. M. Mirjalili, A. Lewis             %
-%               Grey Wolf Optimizer, Advances in Engineering        %
-%               Software , in press,                                %
-%               DOI: 10.1016/j.advengsoft.2013.12.007               %
-%                                                                   %
-%___________________________________________________________________%
+
 
 % Particle Swarm Optimization
 function [cg_curve, gBest, new_seq,Ave,Sd]=AEOS_PSO_with(N,Max_iteration,lb,ub,dim,fobj,Run_no,intervalData__)
@@ -37,20 +20,8 @@ pBest=zeros(noP,dim);
 gBest=zeros(1,dim);
 cg_curve=zeros(1,iter);
 
-%Constraint
-day_instr_on = 20*60;
-orbit_instr_on = 7*60;
-instr_on_off = 10;
-%memory size by block
-Mass = 14128;
-%memory consumption block by second PAn image
-block_sec = 42.93;
-%instrumen off after 60 second
-instr_off = 60;
 
 
-%time day
-t_d = 86400;
 
 for irun=1:Run_no
 % Random initialization for agents.
