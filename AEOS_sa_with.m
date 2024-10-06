@@ -29,16 +29,7 @@ nMove = 2;        % Number of Neighbors per Individual
 mu = 0.5;       % Mutation Rate
 
 sigma = 0.1*(VarMax-VarMin);    % Mutation Range (Standard Deviation)
-%% %Constraint
-day_instr_on = 20*60;
-orbit_instr_on = 7*60;
-instr_on_off = 10;
-%memory size by block
-Mass = 14128;
-%memory consumption block by second PAn image
-block_sec = 42.93;
-%instrumen off after 60 second
-instr_off = 60;
+
 
 %% Initialization
 for irun=1:Run_no
